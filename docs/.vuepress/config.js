@@ -1,15 +1,14 @@
 module.exports = {
   title: 'Jest + Vue Walkthrough',
-  description: 'A testing strategy for large Vue apps using Jest',
+  description: 'A Vue app testing strategy using Jest and @vue/test-utils',
   
   themeConfig: {
     // logo: '/vuepress-logo.png',
-    // lastUpdated: 'Last updated',
-    // repo: 'https://github.com/bencodezen/vuepress-starter-kit',
-    repo: 'drewalth/jest-walkthrough',
+    lastUpdated: 'Last updated',
+    repo: 'https://github.com/drewalth/jest-walkthrough',
     // docsDir: 'docs',
-    // editLinks: true,
-    // editLinkText: 'Recommend a change',
+    editLinks: true,
+    editLinkText: 'Recommend a change',
     nav: [
       {
         text: 'Home',
@@ -21,16 +20,7 @@ module.exports = {
       // },
       {
         text: 'Guide',
-        items: [
-          {
-            text: 'Introduction',
-            link: '/guide/#introduction'
-          },
-          // {
-          //   text: 'Some More Content!',
-          //   link: '/section/#some-more-content'
-          // }
-        ]
+        link: '/guide/getting-started.md'
       },
       // {
       //   text: 'Contact',
@@ -49,6 +39,17 @@ module.exports = {
       //   text: 'Component Example',
       //   link: '/component-example'
       // }
+      
+    ],
+    sidebar: [
+      {
+        title: 'Guide',
+        path: '/guide/',
+        collapsable: false,
+        children: [
+          '/guide/getting-started.md'
+        ]
+      }
     ],
     plugins: ['@vuepress/active-header-links']
   }
