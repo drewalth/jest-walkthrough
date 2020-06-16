@@ -9,17 +9,17 @@
 </template>
 <script>
 export default {
-  name: "route-example",
+  name: 'route-example',
   computed: {
-    routeId() {
+    routeId () {
       return this.$route.params.id
     },
-    routePath() {
+    routePath () {
       return this.$route.path
     },
-    isAdmin() {
+    isAdmin () {
       return this.$route.path.includes('admin')
     }
   }
-};
+}
 </script>

@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "props-example",
+  name: 'props-example',
   props: {
     state: {
       type: String,
@@ -14,5 +14,5 @@ export default {
       validator: val => ['error', 'loading', 'default'].indexOf(val) > -1
     }
   }
-};
+}
 </script>

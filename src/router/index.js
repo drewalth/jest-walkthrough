@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/route/:id',
     name: 'Test Route',
-    component: () => import('../components/route/route.vue')
+    component: () => import('../examples/route/route.vue')
   }
 ]
 

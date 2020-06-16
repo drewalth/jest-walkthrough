@@ -5,11 +5,11 @@
 </template>
 <script>
 export default {
-  name: "emitted-example",
+  name: 'emitted-example',
   methods: {
-    emitEvent() {
-      this.$emit("myEvent", "name", "password");
+    emitEvent () {
+      this.$emit('myEvent', 'name', 'password')
     }
   }
-};
+}
 </script>

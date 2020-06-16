@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "computed-example",
+  name: 'computed-example',
   props: {
     fullName: {
       type: String,
@@ -16,24 +16,24 @@ export default {
     /**
      *
      * TDD lets us refactor our work with confidence.
-     * Both ways of getting first and last initials are valid 
+     * Both ways of getting first and last initials are valid
      * and with both the test will pass, but one is way cleaner.
      *
      */
-    initials() {
-      const names = this.fullName.split(" ");
+    initials () {
+      const names = this.fullName.split(' ')
 
-      let input = [];
+      const input = []
       names.forEach(n => {
-        input.push(n.charAt(0).toUpperCase());
-      });
+        input.push(n.charAt(0).toUpperCase())
+      })
 
-      return input.join("");
+      return input.join('')
     }
     // initials() {
     //   const names = this.fullName.split(' ')
     //   return names[0].charAt(0).toUpperCase() + names[1].charAt(0).toUpperCase()
     // }
   }
-};
+}
 </script>

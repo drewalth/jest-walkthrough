@@ -12,15 +12,15 @@
 </template>
 <script>
 export default {
-  name: "user-input",
-  data:()=> ({
-      username: '',
-      submitted: false
-    }),
-    methods: {
-      handleSubmit() {
-        this.submitted = true
-      }
+  name: 'user-input',
+  data: () => ({
+    username: '',
+    submitted: false
+  }),
+  methods: {
+    handleSubmit () {
+      this.submitted = true
     }
-};
+  }
+}
 </script>
